@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BharatStream – Safer Oceans, Stronger Communities</title>
+  <link rel="stylesheet" href="BharatStream.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="gov-header">
+    <img src="images\emblem.png" alt="Indian Emblem" class="emblem">
+    <div class="header-text">
+        <!--Centre Logo-->
+    <div class="center-logo">
+        <img src ="images\logo.jpeg" alt="BharatStream Logo">
+    </div>
+      <h1>Ministry of Earth Sciences</h1>
+      <h2>Government of India</h2>
+      <h3>BharatStream – Safer Oceans, Stronger Communities</h3>
+    </div>
+    
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#hazards">Hazards</a></li>
+      <li><a href="#report-hazard">Report Hazard</a></li>
+      <li><a href="#report-cleanup">Report Cleanup</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Highlights -->
+  <div class="highlights-bar">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      ⚠️ Need Volunteers in Kerala Flood Zone | 🌊 Unusual wave activity near Odisha coast | 🧹 Oil spill cleanup required near Chennai Port | 📢 Register now to join BharatStream
+    </marquee>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to BharatStream</h1>
+    <p>Predicting hazards, empowering communities, protecting our oceans.</p>
+    <div class="cta-buttons">
+      <a href="#report-hazard" class="btn">Report Hazard</a>
+      <a href="#report-cleanup" class="btn">Report Cleanup</a>
+      <a href="#register" class="btn">Register</a>
+      <a href="#map" class="btn">View Map</a>
+    </div>
+  </section>
+
+  <!-- Hazards Section -->
+  <section id="hazards" class="section">
+    <h2>Hazards Monitoring</h2>
+    <ul class="hazard-list">
+      <li>🌊 Tsunamis</li>
+      <li>🌪️ Storm Surges</li>
+      <li>🌉 High Waves</li>
+      <li>🌐 Swell Surges</li>
+      <li>🌀 Coastal Currents</li>
+    </ul>
+  </section>
+
+  <!-- Hazard Reporting -->
+  <section id="report-hazard" class="section">
+    <h2>Report a Hazard</h2>
+    <form id="hazardForm">
+      <input type="text" id="hazardName" placeholder="Your Name" required>
+      <input type="text" id="hazardLocation" placeholder="Location" required>
+      <select id="hazardType">
+        <option value="Tsunami Alert">Tsunami Alert</option>
+        <option value="Unusual Waves">Unusual Waves</option>
+        <option value="Storm Surge">Storm Surge</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="hazardLang">Preferred Language</label>
+      <select id="hazardLang">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Bengali">Bengali</option>
+      </select>
+      <textarea id="hazardDesc" placeholder="Description" required></textarea>
+      <input type="file" id="hazardFile" required>
+      <button type="submit" class="btn">Submit Report</button>
+    </form>
+    <table id="hazardTable">
+      <thead>
+        <tr><th>Name</th><th>Location</th><th>Type</th><th>Description</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Cleanup Reporting -->
+  <section id="report-cleanup" class="section">
+    <h2>Report Cleanup Needed</h2>
+    <form id="cleanupForm">
+      <input type="text" id="cleanupName" placeholder="Your Name" required>
+      <input type="text" id="cleanupLocation" placeholder="Location" required>
+      <select id="cleanupType">
+        <option value="Garbage">Garbage</option>
+        <option value="Oil Spill">Oil Spill</option>
+        <option value="Chemical Waste">Chemical Waste</option>
+      </select>
+      <label for="cleanupLang">Preferred Language</label>
+      <select id="cleanupLang">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Bengali">Bengali</option>
+      </select>
+      <textarea id="cleanupDesc" placeholder="Description" required></textarea>
+      <input type="file" id="cleanupFile" required>
+      <button type="submit" class="btn">Submit Cleanup Report</button>
+    </form>
+    <table id="cleanupTable">
+      <thead>
+        <tr><th>Name</th><th>Location</th><th>Type</th><th>Description</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Registration -->
+  <section id="register" class="section">
+    <h2>Community Registration</h2>
+    <form id="registerForm">
+      <input type="text" id="regName" placeholder="Name" required>
+      <input type="email" id="regEmail" placeholder="Email" required>
+      <input type="text" id="regPhone" placeholder="Phone" required>
+      <input type="text" id="regRegion" placeholder="Region" required>
+      <select id="regType">
+        <option value="Community Member">Community Member</option>
+        <option value="Volunteer">Volunteer</option>
+        <option value="Govt Official">Govt Official</option>
+      </select>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <table id="registerTable">
+      <thead>
+        <tr><th>Name</th><th>Email</th><th>Phone</th><th>Region</th><th>User Type</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Map Mockup -->
+  <section id="map" class="section">
+    <h2>Live Map & Social Feed</h2>
+    <div class="map-container">
+      <img src="images\map2.jpeg" alt="India Map" class="map">
+      <div id="mapPins"></div>
+    </div>
+    <div class="social-feed">
+      <h3>Live Social Feed</h3>
+      <div class="feed-item">🌊 "Strong currents spotted near Goa beaches."</div>
+      <div class="feed-item">🧹 "Volunteers needed for beach cleanup in Kerala."</div>
+      <div class="feed-item">⚠️ "Fishermen warned to avoid deep sea near Odisha."</div>
+    </div>
+  </section>
+
+  <!-- Assistant Sidebar -->
+  <div class="assistant">
+    <h3>BharatStream Assistant</h3>
+    <p>Talk to BharatStream Assistant</p>
+    <p>Connect with Volunteers</p>
+    <p>Disaster Helpline: 1070</p>
+    <div class="chat-box">
+      <p><em>Assistant chat mockup will appear here...</em></p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About BharatStream</h2>
+    <p>BharatStream is a prototype initiative under the Ministry of Earth Sciences to monitor ocean hazards, empower communities, and build a resilient coastal ecosystem. This platform enables real-time hazard reporting, volunteer engagement, and predictive awareness for safer oceans.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 BharatStream | Prototype for Ministry of Earth Sciences | Visit: <a href="#">www.bharatstream.in</a></p>
+  </footer>
+
+  <script src="BharatStream.js"></script>
+</body>
+</html>
